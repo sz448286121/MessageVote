@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6AADB38F-A905-43A5-90B1-47366707C5CE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>vote</RootNamespace>
+    <AssemblyName>vote</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addmeeting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addmeeting.Designer.cs">
+      <DependentUpon>addmeeting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addpoll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addpoll.Designer.cs">
+      <DependentUpon>addpoll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addproject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addproject.Designer.cs">
+      <DependentUpon>addproject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addjudge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addjudge.Designer.cs">
+      <DependentUpon>addjudge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoSizeFormClass.cs" />
+    <Compile Include="information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="information.Designer.cs">
+      <DependentUpon>information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MsgType.cs" />
+    <Compile Include="PDUEncoding.cs" />
+    <Compile Include="DataBase.cs" />
+    <Compile Include="GsmModem.cs" />
+    <Compile Include="mainform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainform.Designer.cs">
+      <DependentUpon>mainform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="meeting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="meeting.Designer.cs">
+      <DependentUpon>meeting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="poll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="poll.Designer.cs">
+      <DependentUpon>poll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="project.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="project.Designer.cs">
+      <DependentUpon>project.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="result.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="result.Designer.cs">
+      <DependentUpon>result.cs</DependentUpon>
+    </Compile>
+    <Compile Include="voter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="voter.Designer.cs">
+      <DependentUpon>voter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="voting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="voting.Designer.cs">
+      <DependentUpon>voting.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addmeeting.resx">
+      <DependentUpon>addmeeting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addpoll.resx">
+      <DependentUpon>addpoll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addproject.resx">
+      <DependentUpon>addproject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addjudge.resx">
+      <DependentUpon>addjudge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="information.resx">
+      <DependentUpon>information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainform.resx">
+      <DependentUpon>mainform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="meeting.resx">
+      <DependentUpon>meeting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="poll.resx">
+      <DependentUpon>poll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="project.resx">
+      <DependentUpon>project.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="result.resx">
+      <DependentUpon>result.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="voter.resx">
+      <DependentUpon>voter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="voting.resx">
+      <DependentUpon>voting.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
